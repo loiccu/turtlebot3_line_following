@@ -14,6 +14,9 @@ It assumes that:
 
 All the Python scripts used in this tutorial are in the [src/](src/) folder.
 
+![Camera mounted on TB3 front](assets/mounted_camera.jpeg)
+*A fisheye camera mounted at the front of TB3*
+
 **Contents**
 1. [Camera test](#1-camera-test-v4l2_camera-ros-package)
 2. [A line follower](#2-a-line-follower)

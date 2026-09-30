@@ -14,6 +14,10 @@ Il suppose que :
 
 Tous les scripts Python utilisés dans ce tutoriel se trouvent dans le dossier [src/](src/).
 
+![Camera mounted on TB3 front](assets/mounted_camera.jpeg)
+*Une caméra fisheye monté à l'avant du TB3*
+
+
 **Sommaire**
 1. [Test de la caméra](#1-test-de-la-caméra-paquet-ros-v4l2_camera)
 2. [Un suiveur de ligne](#2-un-suiveur-de-ligne)

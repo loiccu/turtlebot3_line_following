@@ -13,6 +13,8 @@ Les scripts Python du tutoriel de suivi de ligne et de piste se trouvent dans le
 
 Une version PDF de chaque tutoriel et guide est disponible dans le dossier [pdf/](pdf/).
 
+
+![alt text](assets/single_line_follow.gif)
 ---
 
 ### Guides complémentaires (en anglais)
