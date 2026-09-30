@@ -6,9 +6,7 @@ Ce dépôt propose des tutoriels **ROS 2 Humble** pour le **TurtleBot3** : de l'
 
 ## Tutoriels
 
-Ordre recommandé :
-
-1. [**Installation rapide**](Quick_installation_fr.md) : configurer le PC et le TurtleBot3, avec une image de carte SD prête à l'emploi pour le Raspberry Pi.
+1. [**Installation rapide**](Quick_installation_fr.md) : configurer le PC et le TurtleBot3, avec en option une image de carte SD prête à l'emploi pour la Raspberry Pi.
 2. [**Suivi de ligne et de piste**](Line_track_following_fr.md) : diffuser le flux de la caméra vers le PC, détecter une ligne de couleur, puis suivre une ligne ou une piste formée de deux lignes (missions URMRC).
 
 Les scripts Python du tutoriel de suivi de ligne et de piste se trouvent dans le dossier [src/](src/).
