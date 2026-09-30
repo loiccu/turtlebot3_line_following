@@ -197,7 +197,7 @@ The color is defined as a range in the HSV (Hue, Saturation, Value) color space:
 
 ![HSV color space (source: paralect.com)](assets/HSV.png)
 
-*Image source: [paralect.com](https://www.paralect.com/blog/post/object-detection-from-image-and-video-using-hsv-color-space)*
+*Image source: [Xiao X, Li J, Zhou M, Gao H, Wang Q, Xia Y, Lim J and Xu Z (2026) Carotid vulnerable plaque in coronary heart disease: a machine learning-based diagnostic model integrating tongue parameters and blood metabolic biomarkers. Front. Cardiovasc. Med.](https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2026.1852366/full)*
 
 In OpenCV, saturation S and value V are in [0, 255] (i.e. 0-100 %) and hue H is in [0, 179] instead of [0°, 360°]. So yellow (60° in the picture above) is H = 60 / 2 = 30 in OpenCV.
 

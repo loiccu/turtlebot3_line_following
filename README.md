@@ -11,18 +11,21 @@ Recommended order:
 
 The Python scripts of the line and track following tutorial are in the [src/](src/) folder.
 
-## Additional how-tos
+---
+
+### Additional how-tos
 
 - [Back up and restore the TurtleBot3 SD card](BackupRestore_SDCard.md)
 - [Battery management (LiPo safety, charging, storage)](BatteryOperation.md)
 
-## Requirements
+
+### Requirements
 
 - A TurtleBot3 Burger with a Raspberry Pi camera mounted at the front
 - A PC running Ubuntu 22.04 with ROS 2 Humble
 - A Wi-Fi network shared by the PC and the robot
 
-## External resources
+### External resources
 
 - Official ROS 2 Humble tutorials:
     - [Beginner: CLI Tools](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools.html) (**strongly recommended** before starting)
@@ -32,6 +35,10 @@ The Python scripts of the line and track following tutorial are in the [src/](sr
     - Associated repository: [ROBOTIS-GIT/turtlebot3_autorace](https://github.com/ROBOTIS-GIT/turtlebot3_autorace)
 - Any tutorial or course on the basics of the Linux command line
 
-## License
+---
+
+### License
 
 This work is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/): you may share and adapt it for any purpose, provided you give appropriate credit (Loïc Cuvillon), link to the license and indicate if changes were made. See the [LICENSE](LICENSE) file for the full text.
+
+Exception: the HSV color space image ([assets/HSV.png](assets/HSV.png)) is not covered by this license; all rights remain with its authors.
