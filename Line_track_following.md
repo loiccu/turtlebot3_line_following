@@ -8,7 +8,7 @@ It assumes that:
 - a working TurtleBot3 is available, with a camera mounted at the front of the robot and connected to the Raspberry Pi (RPi): a [RPi fisheye camera (M)](https://www.waveshare.com/rpi-camera-m.htm) or a [RPi camera v2](https://www.kubii.com/fr/cameras-capteurs/1653-module-camera-v2-8mp-kubii-652508442112.html?src=raspberrypi),
 - both the RPi SD card of the TurtleBot3 and the PC have been set up with ROS 2 Humble,
 - the RPi SD card is configured to use the legacy camera driver and the `v4l2_camera` ROS package is installed, either:
-    - because you are using the ready-to-use SD card image, which already includes them,
+    - because you are using the ready-to-use SD card image, which already includes them ([Quick_installation](Quick_installation.md)),
     - or because you have set up the RPi yourself as described in the manual: [quick_start_guide/sbc_setup#raspberry-pi-camera](https://docs.robotis.com/docs/systems/turtlebot3/quick_start_guide/sbc_setup#raspberry-pi-camera).
 
 All the Python scripts used in this tutorial are in the [src/](src/) folder.

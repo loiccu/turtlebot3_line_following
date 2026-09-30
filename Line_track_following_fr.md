@@ -8,7 +8,7 @@ Il suppose que :
 - un TurtleBot3 fonctionnel est disponible, avec une caméra montée à l'avant du robot et branchée sur la Raspberry Pi (RPi) : une [caméra RPi fisheye (M)](https://www.waveshare.com/rpi-camera-m.htm) ou une [caméra RPi v2](https://www.kubii.com/fr/cameras-capteurs/1653-module-camera-v2-8mp-kubii-652508442112.html?src=raspberrypi),
 - la carte SD de la RPi du TurtleBot3 et le PC ont tous deux été configurés avec ROS 2 Humble,
 - la carte SD de la RPi est configurée pour utiliser l'ancien pilote de caméra (*legacy*) et le paquet ROS `v4l2_camera` est installé, soit :
-    - parce que vous utilisez l'image de carte SD prête à l'emploi, qui les inclut déjà,
+    - parce que vous utilisez l'image de carte SD prête à l'emploi, qui les inclut déjà ([Quick_installation_fr](Quick_installation_fr.md)),
     - soit parce que vous avez configuré la RPi vous-même comme décrit dans le manuel : [quick_start_guide/sbc_setup#raspberry-pi-camera](https://docs.robotis.com/docs/systems/turtlebot3/quick_start_guide/sbc_setup#raspberry-pi-camera).
 
 Tous les scripts Python utilisés dans ce tutoriel se trouvent dans le dossier [src/](src/).
@@ -390,4 +390,4 @@ Une fois la position de la piste par rapport au robot (c'est-à-dire par rapport
 Les utilisateurs avancés peuvent vouloir lancer le nœud de suivi de ligne/piste avec la commande `ros2 run` au lieu d'appeler Python directement.
 Pour cela, il faut créer un paquet ROS 2 autour du script Python.
 
-*[En cours de rédaction]*
+*[Travail en cours]*
