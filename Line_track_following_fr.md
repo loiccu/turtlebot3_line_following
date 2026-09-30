@@ -3,9 +3,10 @@
 *[(English version here)](Line_track_following.md)*
 
 Ce tutoriel montre comment faire suivre au TurtleBot3 une ligne de couleur, puis une piste formée de deux lignes de couleur, à l'aide de sa caméra.
+Il propose une solution qui se veut plus accessible et simple que le suivi de piste proposée dans le projet [autonomous_driving](https://docs.robotis.com/docs/systems/turtlebot3/autonomous_driving/) du manuel officiel. 
 
 Il suppose que :
-- un TurtleBot3 fonctionnel est disponible, avec une caméra montée à l'avant du robot et branchée sur la Raspberry Pi (RPi) : une [caméra RPi fisheye (M)](https://www.waveshare.com/rpi-camera-m.htm) ou une [caméra RPi v2](https://www.kubii.com/fr/cameras-capteurs/1653-module-camera-v2-8mp-kubii-652508442112.html?src=raspberrypi),
+- un TurtleBot3 fonctionnel est disponible, avec une caméra montée à l'avant du robot et branchée sur la Raspberry Pi (RPi) : une [caméra RPi fisheye (M)](https://www.waveshare.com/rpi-camera-m.htm), dont le large de champ du vue est bénéfique, ou une [caméra RPi v2](https://www.kubii.com/fr/cameras-capteurs/1653-module-camera-v2-8mp-kubii-652508442112.html?src=raspberrypi),
 - la carte SD de la RPi du TurtleBot3 et le PC ont tous deux été configurés avec ROS 2 Humble,
 - la carte SD de la RPi est configurée pour utiliser l'ancien pilote de caméra (*legacy*) et le paquet ROS `v4l2_camera` est installé, soit :
     - parce que vous utilisez l'image de carte SD prête à l'emploi, qui les inclut déjà ([Quick_installation_fr](Quick_installation_fr.md)),
