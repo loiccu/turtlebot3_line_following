@@ -131,7 +131,7 @@ Connectez-vous au TurtleBot3 via le réseau depuis un terminal du PC, comme déc
     ```sh
     ping 192.168.1.45
     ```
-    Remplacez `192.168.1.45` par l'adresse IP statique que vous avez donnée au TurtleBot3, ou par l'adresse IP dynamique attribuée par votre routeur/point d'accès (elle se trouve dans l'interface web du routeur, ou avec `ip a` sur le TurtleBot3 avec un écran branché).
+    où `192.168.1.45` est à remplacer par l'adresse IP statique que vous avez donnée au TurtleBot3, ou par l'adresse IP dynamique attribuée par votre routeur/point d'accès (elle se trouve dans l'interface web du routeur, ou avec `ip a` sur le TurtleBot3 avec un écran branché).
     Si le TurtleBot3 est connecté au réseau, le temps d'aller-retour de chaque paquet s'affiche. Arrêtez `ping` avec `Ctrl+C`.
 
 2. Sur le PC, connectez-vous à distance au TurtleBot3 :

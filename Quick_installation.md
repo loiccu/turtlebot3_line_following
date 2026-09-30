@@ -131,7 +131,7 @@ Connect from a terminal on the PC to the TurtleBot3 through the network, as desc
     ```sh
     ping 192.168.1.45
     ```
-    Replace `192.168.1.45` with the static IP address you gave to the TurtleBot3, or with the dynamic IP address assigned by your router/hotspot (it can be found in the router web interface, or with `ip a` on the TurtleBot3 with a screen connected).
+    where `192.168.1.45` has to be replaced with the static IP address you gave to the TurtleBot3, or with the dynamic IP address assigned by your router/hotspot (it can be found in the router web interface, or with `ip a` on the TurtleBot3 with a screen connected).
     If the TurtleBot3 is connected to the network, the round-trip time of each packet is displayed. Stop `ping` with `Ctrl+C`.
 
 2. On the PC, connect remotely to the TurtleBot3:
