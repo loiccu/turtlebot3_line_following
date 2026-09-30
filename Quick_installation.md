@@ -1,6 +1,8 @@
 # Quick Installation (with a Ready-to-Use SD Card)
 by Loïc Cuvillon
 
+*[(Version française ici)](Quick_installation_fr.md)*
+
 This quick start guide sets up the TurtleBot3 and the PC for line following, using a camera with the `v4l2_camera` ROS package.
 
 It follows the [official manual](https://docs.robotis.com/docs/systems/turtlebot3/quick_start_guide/pc_setup) to install ROS Humble, but offers a much quicker alternative to set up the TurtleBot3 Raspberry Pi (RPi): a ready-to-use SD card image.
