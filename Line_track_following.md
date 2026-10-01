@@ -341,6 +341,10 @@ As explained above, the robot moves at a constant linear velocity and its angula
         - check the sign of `err`,
         - check that the motors are not swapped: a positive angular velocity must turn the robot **counterclockwise** as seen from above (ROS convention). This can be tested with `ros2 run turtlebot3_teleop teleop_keyboard`.
 
+- Going further: handling wheel velocity saturation
+    - To turn, the robot drives one wheel faster than the other: each wheel velocity is `LINEAR_VEL ± angular.z × L/2` (`L` = wheel separation, 0.160 m on the Burger). If `LINEAR_VEL` is close to the maximum velocity of the robot (0.22 m/s, i.e. the maximum velocity of the wheels), the outer wheel cannot go any faster: its velocity saturates and the robot turns less than commanded, or not at all.
+    - Devise a strategy to handle this saturation, for example by reducing the linear velocity when the required angular velocity (i.e. the error) is large, so that turning always has priority over going forward.
+
 
 # 3. A track follower (two lines) — URMRC26
 

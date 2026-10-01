@@ -7,7 +7,7 @@ This repository provides **ROS 2 Humble** tutorials for the **TurtleBot3**: from
 ## Tutorials
 
 1. [**Quick installation**](Quick_installation.md): set up the PC and the TurtleBot3, optionally with a ready-to-use SD card image for the Raspberry Pi.
-2. [**Line and track following**](Line_track_following.md): stream the camera to the PC, detect a colored line, then follow a line or a track made of two lines (URMRC missions).
+2. [**Line and track following**](Line_track_following.md): stream the camera to the PC, detect a colored line, then follow a line or a track made of two lines (URMRC mission).
 
 The Python scripts of the line and track following tutorial are in the [src/](src/) folder.
 

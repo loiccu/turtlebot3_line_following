@@ -342,6 +342,9 @@ Comme expliqué plus haut, le robot avance à vitesse linéaire constante et sa 
         - vérifiez le signe de `err`,
         - vérifiez que les moteurs ne sont pas inversés : une vitesse angulaire positive doit faire tourner le robot dans le **sens antihoraire** vu de dessus (convention ROS). Cela peut se tester avec `ros2 run turtlebot3_teleop teleop_keyboard`.
 
+- Pour aller plus loin : gérer la saturation de la vitesse des roues
+    - Pour tourner, le robot fait tourner une roue plus vite que l'autre : la vitesse de chaque roue vaut `LINEAR_VEL ± angular.z × L/2` (`L` = entraxe des roues, 0,160 m sur le Burger). Si `LINEAR_VEL` est proche de la vitesse maximale du robot (0,22 m/s, c'est-à-dire la vitesse maximale des roues), la roue extérieure ne peut pas aller plus vite : sa vitesse sature et le robot tourne moins que demandé, voire pas du tout.
+    - Imaginez une stratégie pour gérer cette saturation, par exemple en diminuant la vitesse linéaire lorsque la vitesse angulaire demandée (c'est-à-dire l'erreur) est grande, afin que la rotation soit toujours prioritaire sur l'avance.
 
 # 3. Un suiveur de piste (deux lignes) — URMRC26
 
@@ -386,6 +389,7 @@ Une fois la position de la piste par rapport au robot (c'est-à-dire par rapport
 
 - Autres idées pour améliorer la détection et le suivi des lignes :
     - fixez un seuil sur le nombre de pixels détectés avant de considérer une ligne comme détectée. Actuellement, une ligne est considérée comme détectée dès qu'un seul pixel correspond à sa couleur (`M_yellow['m00'] > 0`). C'est ce que fait le projet autorace de Robotis, dans [detect_lane.py](https://github.com/ROBOTIS-GIT/turtlebot3_autorace/blob/main/turtlebot3_autorace_detect/turtlebot3_autorace_detect/detect_lane.py) ;
+    - gérer la saturation en vitesse des roues (voir section Etape 5. Suivre la ligne)
     - remplacez le correcteur proportionnel (P) par un correcteur proportionnel-dérivé (PD) ;
     - si plusieurs taches de la même couleur sont détectées, ne gardez que la plus grande (voir `cv2.findContours()` et `cv2.contourArea()`) ;
     - ...
