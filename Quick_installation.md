@@ -46,7 +46,7 @@ There are two ways to install the TurtleBot3 Raspberry Pi (the SBC, single board
 - [Option B](#option-b-step-by-step-with-the-robotis-manual): follow the step-by-step instructions of the Robotis manual.
 
 ### Option A: with a ready-to-use SD card image
-As an alternative to building the RPi system step by step as in the Robotis manual ([quick_start_guide/sbc_setup](https://docs.robotis.com/docs/systems/turtlebot3/quick_start_guide/sbc_setup)), a ready-to-use SD card image is available. It contains Ubuntu 22.04, ROS 2 Humble, the TurtleBot3 packages, the legacy camera driver and the camera tools (V4L2):
+As an alternative to building the RPi system step by step as in the Robotis manual ([quick_start_guide/sbc_setup](https://docs.robotis.com/docs/systems/turtlebot3/quick_start_guide/sbc_setup)), a ready-to-use SD card image is available. It has been tested for a Raspberry Pi4. It contains Ubuntu 22.04, ROS 2 Humble, the TurtleBot3 packages, the legacy camera driver and the camera tools (V4L2):
 
 **Download:** [turtlebot3_humble_v4l2camera.img.gz](https://seafile.unistra.fr/f/882bc4b224e947a8a27d/?dl=1)
 
