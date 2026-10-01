@@ -13,7 +13,7 @@ The Python scripts of the line and track following tutorial are in the [src/](sr
 
 A PDF version of each tutorial and how-to is available in the [pdf/](pdf/) folder.
 
-![alt text](assets/single_line_follow.gif)
+![alt text](assets/track_follow.gif)
 
 ---
 
