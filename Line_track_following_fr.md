@@ -371,12 +371,7 @@ Le projet [autonomous_driving](https://docs.robotis.com/docs/systems/turtlebot3/
 Une fois la position de la piste par rapport au robot (c'est-à-dire par rapport au centre de l'image) connue, le robot peut la suivre.
 
 ### Mise en œuvre
-- Complétez `track_detect.py` à l'aide du code de commande en vitesse de `05follower.py`, en particulier :
-    - copiez les imports (`Twist`, `SignalHandlerOptions`, `time`) et les constantes `LINEAR_VEL` et `KP`,
-    - copiez la création du publisher `cmd_vel` depuis `__init__`, ainsi que la méthode `stop_robot()`,
-    - dans le bloc `if cx_yellow is not None and cx_blue is not None:` (c'est-à-dire lorsque les deux lignes sont détectées), calculez et publiez la vitesse du robot à partir du centre de la piste (`cx_combined`, le point rouge),
-    - sinon, arrêtez le robot,
-    - modifiez `main()` comme dans `05follower.py` (gestionnaire de signaux désactivé et appel à `stop_robot()` dans le bloc `finally`).
+- En complétant `track_detect.py` avec le code de commande en vitesse de `05follower.py`, on obtient `track_follower.py`.
 
 - Testez-le.
 - Réglez les paramètres pour améliorer le suivi de piste :
@@ -389,7 +384,7 @@ Une fois la position de la piste par rapport au robot (c'est-à-dire par rapport
 
 - Autres idées pour améliorer la détection et le suivi des lignes :
     - fixez un seuil sur le nombre de pixels détectés avant de considérer une ligne comme détectée. Actuellement, une ligne est considérée comme détectée dès qu'un seul pixel correspond à sa couleur (`M_yellow['m00'] > 0`). C'est ce que fait le projet autorace de Robotis, dans [detect_lane.py](https://github.com/ROBOTIS-GIT/turtlebot3_autorace/blob/main/turtlebot3_autorace_detect/turtlebot3_autorace_detect/detect_lane.py) ;
-    - gérer la saturation en vitesse des roues (voir section Etape 5. Suivre la ligne)
+    - gérez la saturation de la vitesse des roues (voir la fin de l'[Étape 5. Suivre la ligne](#étape-5-suivre-la-ligne)) ;
     - remplacez le correcteur proportionnel (P) par un correcteur proportionnel-dérivé (PD) ;
     - si plusieurs taches de la même couleur sont détectées, ne gardez que la plus grande (voir `cv2.findContours()` et `cv2.contourArea()`) ;
     - ...

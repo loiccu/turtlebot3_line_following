@@ -371,12 +371,7 @@ The [autonomous_driving](https://docs.robotis.com/docs/systems/turtlebot3/autono
 Once the position of the track with respect to the robot (i.e. with respect to the image center) is known, the robot can follow it.
 
 ### Implementation
-- Update `track_detect.py` using the velocity control code of `05follower.py`, in particular:
-    - copy the imports (`Twist`, `SignalHandlerOptions`, `time`) and the `LINEAR_VEL` and `KP` constants,
-    - copy the creation of the `cmd_vel` publisher from `__init__`, and the `stop_robot()` method,
-    - inside the `if cx_yellow is not None and cx_blue is not None:` block (i.e. when both lines are detected), compute and publish the robot velocity from the track center (`cx_combined`, the red dot),
-    - otherwise, stop the robot,
-    - update `main()` as in `05follower.py` (disabled signal handler and call to `stop_robot()` in the `finally` block).
+- By updating `track_detect.py` with the velocity control code of `05follower.py`, we obtain `track_follower.py`.
 
 - Test it.
 - Tune the parameters to improve the track following:
@@ -389,6 +384,7 @@ Once the position of the track with respect to the robot (i.e. with respect to t
 
 - Other ideas to improve the line detection and following:
     - set a threshold on the number of detected pixels before considering a line as detected. Currently, a line is considered detected as soon as a single pixel matches its color (`M_yellow['m00'] > 0`). This is done in the Robotis autorace project, in [detect_lane.py](https://github.com/ROBOTIS-GIT/turtlebot3_autorace/blob/main/turtlebot3_autorace_detect/turtlebot3_autorace_detect/detect_lane.py);
+    - handle the wheel velocity saturation (see the end of [Step 5. Follow the line](#step-5-follow-the-line));
     - replace the proportional (P) controller with a proportional-derivative (PD) controller;
     - if several blobs of the same color are detected, keep only the biggest one (see `cv2.findContours()` and `cv2.contourArea()`);
     - ...
