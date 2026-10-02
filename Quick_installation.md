@@ -42,7 +42,7 @@ Then install a few useful tools:
 
 ## 2. TurtleBot3 RPi installation (SBC and OpenCR setup)
 There are two ways to install the TurtleBot3 Raspberry Pi (the SBC, single board computer):
-- [Option A](#option-a-with-a-ready-to-use-sd-card-image): write a ready-to-use SD card image (recommended, much quicker),
+- [Option A](#option-a-with-a-ready-to-use-sd-card-image): write a ready-to-use SD card image (much quicker),
 - [Option B](#option-b-step-by-step-with-the-robotis-manual): follow the step-by-step instructions of the Robotis manual.
 
 ### Option A: with a ready-to-use SD card image
